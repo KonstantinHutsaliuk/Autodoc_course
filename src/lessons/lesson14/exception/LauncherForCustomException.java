@@ -5,7 +5,6 @@ public class LauncherForCustomException {
 //compute(17);
 
         try {
-            compute(1);
             compute(17);
         } catch (CustomException e){
             System.out.println(e);
