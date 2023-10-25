@@ -2,7 +2,7 @@ package homeworks.hw17;
 
 import java.util.Comparator;
 
-public class Student implements Comparator<Student> {
+public class Student {
     private String name;
 
     private double averageGrade;
@@ -26,11 +26,6 @@ public class Student implements Comparator<Student> {
 
     public void setAverageGrade(double averageGrade) {
         this.averageGrade = averageGrade;
-    }
-
-    @Override
-    public int compare(Student o1, Student o2) {
-        return 0;
     }
 
     @Override
