@@ -1,11 +1,10 @@
 package lessons.lesson16.iterators;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-public class FailSaveIterator {
+public class FailSafeIterator {
 
     public static void main(String[] args) {
         List<Integer> myList = new CopyOnWriteArrayList<>();

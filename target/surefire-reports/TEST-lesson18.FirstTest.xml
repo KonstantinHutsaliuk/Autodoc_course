@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="lesson18.FirstTest" time="0.425" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="lesson18.FirstTest" time="0.413" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15\bin"/>
-    <property name="sun.java.command" value="C:\Users\user\AppData\Local\Temp\surefire13933210968026316919\surefirebooter-20231027222204722_3.jar C:\Users\user\AppData\Local\Temp\surefire13933210968026316919 2023-10-27T22-22-04_603-jvmRun1 surefire-20231027222204722_1tmp surefire_0-20231027222204722_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\user\AppData\Local\Temp\surefire13845481182481479447\surefirebooter-20231027224140639_3.jar C:\Users\user\AppData\Local\Temp\surefire13845481182481479447 2023-10-27T22-41-40_520-jvmRun1 surefire-20231027224140639_1tmp surefire_0-20231027224140639_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\user\IdeaProjects\Autodoc_course\target\test-classes;C:\Users\user\IdeaProjects\Autodoc_course\target\classes;C:\Users\user\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\user\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\user\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\user\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\user\AppData\Local\Temp\surefire13933210968026316919\surefirebooter-20231027222204722_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\user\AppData\Local\Temp\surefire13845481182481479447\surefirebooter-20231027224140639_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15+36-1562"/>
@@ -56,7 +56,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="testDivision" classname="lesson18.FirstTest" time="0.004">
+  <testcase name="testDivision" classname="lesson18.FirstTest" time="0.001">
     <system-out><![CDATA[This method will execute before first test once
 This method will execute before class once
 This method will execute before each test method
@@ -66,31 +66,7 @@ SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="testMethod" classname="lesson18.FirstTest" time="0.003">
-    <system-out><![CDATA[This method will execute after each test method
-This method will execute before each test method
-Hello world
-]]></system-out>
-  </testcase>
-  <testcase name="testMethod" classname="lesson18.FirstTest" time="0">
-    <system-out><![CDATA[This method will execute after each test method
-This method will execute before each test method
-Hello world
-]]></system-out>
-  </testcase>
-  <testcase name="testMethod" classname="lesson18.FirstTest" time="0.007">
-    <system-out><![CDATA[This method will execute after each test method
-This method will execute before each test method
-Hello world
-]]></system-out>
-  </testcase>
-  <testcase name="testMethod" classname="lesson18.FirstTest" time="0">
-    <system-out><![CDATA[This method will execute after each test method
-This method will execute before each test method
-Hello world
-]]></system-out>
-  </testcase>
-  <testcase name="testMethod" classname="lesson18.FirstTest" time="0">
+  <testcase name="testMethod" classname="lesson18.FirstTest" time="0.002">
     <system-out><![CDATA[This method will execute after each test method
 This method will execute before each test method
 Hello world
