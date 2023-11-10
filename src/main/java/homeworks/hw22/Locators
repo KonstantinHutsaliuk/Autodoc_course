@@ -1,0 +1,22 @@
+Logo CSS
+a[href="https://rozetka.com.ua/"]
+Logo xPath
+//a[@class='header__logo']
+
+Catalog button CSS
+button[id='fat-menu']
+Catalog button xPath
+//button[@id='fat-menu']
+
+Microphone button CSS
+.search-form__microphone.ng-star-inserted
+Microphone button xPath
+//div[@class='search-form__input-wrapper']/button[2]
+
+
+Basket icon CSS
+rz-cart > button
+или
+button[_ngcontent-rz-client-c1870466485].header__button
+Basket icon xPath
+//rz-cart/button

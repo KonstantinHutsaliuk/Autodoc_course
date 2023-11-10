@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -33,6 +34,8 @@ public class FirstTestExample {
         WebElement searchButton = driver.findElement(
                 By.xpath("//button[contains(@class, 'search-form__submit')]"));
         searchButton.click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5000));
+
         WebElement titleOfFirstProduct = driver.findElement(By.xpath("(//span[@class='goods-tile__title'])[1]"));
 
         String title = titleOfFirstProduct.getText().trim();
