@@ -6,8 +6,8 @@ public class Launcher {
         //enumValuesAndNameMethod();
         enumWithConstructor();
 
-//        String res = gettingCurrency(CountryCurrency.CANADA);
-//        System.out.println(res);
+       //String res = gettingCurrency(CountryCurrency.CANADA);
+        //System.out.println(res);
     }
 
     public static String gettingCurrency(CountryCurrency countryCurrency){
@@ -21,9 +21,9 @@ public class Launcher {
         return result;
     }
 
-/*    public static void enumWithConstructor(){
+    public static void enumWithConstructor1(){
         System.out.println(CountryCurrency.CANADA.currency);
-    }*/
+    }
 
     public static void enumWithConstructor(){
         for (CountryCurrency cc: CountryCurrency.values() ) {

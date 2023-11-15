@@ -1,0 +1,1 @@
+[[ChromeDriver: chrome on windows (b9cb80058778c9fd8d5d26a0811c94c1)] -> xpath: (//span[@class='goods-tile__title'])[1]] 43 499₴
