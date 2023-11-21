@@ -20,16 +20,16 @@ public class WebDriverInit {
 
         ChromeOptions options = new ChromeOptions();
         //отключает уведомления в браузере
-        //options.addArguments("--disable-notifications");
+        options.addArguments("--disable-notifications");
 
         //отключает блокировку всплывающих окон
-        //options.addArguments("--disable-popup-blocking");
+        options.addArguments("--disable-popup-blocking");
 
         //отключает инфобары хрома
-       // options.addArguments("--disable-infobars");
+        options.addArguments("--disable-infobars");
 
         //предотвращает обнаружение автоматизированного средства веб-тестирования
-        //options.addArguments("--disable-blink-features=AutomationControlled");
+        options.addArguments("--disable-blink-features=AutomationControlled");
 
         //запускает браузер в режиме графического интерфейса(headless mode)
         //options.addArguments("--headless");
