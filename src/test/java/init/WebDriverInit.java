@@ -37,6 +37,9 @@ public class WebDriverInit {
         //запускает на полный экран
         options.addArguments("--start-maximized");
 
+        options.addArguments("--disable-automation");
+        options.addArguments("--disable-extensions");
+
         driver = new ChromeDriver(options);
         webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
