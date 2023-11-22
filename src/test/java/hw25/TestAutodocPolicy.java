@@ -21,10 +21,9 @@ public class TestAutodocPolicy extends WebDriverInit {
         registerButtonClick();
         privacyButtonClick();
         switchTab();
+        socialNetworkBlockFind();
 
         WebElement socialNetworksBlock = driver.findElement(By.xpath("(//h2/b)[3]"));
-        JavascriptExecutor jse = (JavascriptExecutor) driver;
-        jse.executeScript("arguments[0].scrollIntoView();", socialNetworksBlock);
         WebElement textInSocialBlock = driver.findElement(By.xpath("(//h2)[3]/following-sibling::p"));
 
         Assert.assertTrue(socialNetworksBlock.isDisplayed());
@@ -33,10 +32,9 @@ public class TestAutodocPolicy extends WebDriverInit {
     }
 
     public void closePopupCookies() {
-        JavascriptExecutor jse = (JavascriptExecutor) driver;
         WebElement cookiesBanner = webDriverWait.until(ExpectedConditions.elementToBeClickable(By.xpath(
                 "//a[@id='3']")));
-        jse.executeScript("arguments[0].click();", cookiesBanner);
+        jsExecutor(driver,"arguments[0].click();", cookiesBanner);
     }
 
     public void loginButtonClick() {
@@ -60,5 +58,10 @@ public class TestAutodocPolicy extends WebDriverInit {
         Set<String> handless = driver.getWindowHandles();
         List<String> listHandless = new ArrayList<>(handless);
         driver.switchTo().window(listHandless.get(1));
+    }
+
+    public void socialNetworkBlockFind(){
+        WebElement socialNetworksBlock = driver.findElement(By.xpath("(//h2/b)[3]"));
+        jsExecutor(driver, "arguments[0].scrollIntoView();", socialNetworksBlock);
     }
 }
