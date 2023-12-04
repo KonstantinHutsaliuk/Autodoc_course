@@ -17,7 +17,7 @@ public class TestRozetkaPolicy extends WebDriverInit {
     public void privacyPolicyRozetka() {
 
         driver.get("https://rozetka.com.ua/");
-        changeCFCookie("uFgDyROa_F8TMBXdYa2JfR.yfqCMIuh9D4OeVfZuNNU-1700661505-0-1-6bc3b921.1a79055a.3cc2e6c1-0.2.1700661505");
+        changeCFCookie();
 
         loginPopupOpen();
         regButtonClick();
@@ -27,10 +27,10 @@ public class TestRozetkaPolicy extends WebDriverInit {
         List<String> listHandless = new ArrayList<>(handless);
         driver.switchTo().window(listHandless.get(1));
 
-        changeCFCookie("uFgDyROa_F8TMBXdYa2JfR.yfqCMIuh9D4OeVfZuNNU-1700661505-0-1-6bc3b921.1a79055a.3cc2e6c1-0.2.1700661505");
+        changeCFCookie();
 
         changeLang();
-        changeCFCookie("uFgDyROa_F8TMBXdYa2JfR.yfqCMIuh9D4OeVfZuNNU-1700661505-0-1-6bc3b921.1a79055a.3cc2e6c1-0.2.1700661505");
+        changeCFCookie();
 
         WebElement deleteBlock = driver.findElement(By.xpath("(//h3/strong)[5]"));
         jsExecutor(driver, "arguments[0].scrollIntoView();", deleteBlock);

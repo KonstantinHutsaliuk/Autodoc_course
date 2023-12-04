@@ -25,7 +25,7 @@ public class RozetkaFirstTest extends WebDriverInit {
         String titleOfFirstElement = firstElement.getText();
 
         WebElement firstBuyButton = webDriverWait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-                "//ul[@rzgridlayout]/li[1]//app-buy-button")));
+                "//ul[@rzgridlayout]/li[1]//app-buy-button" )));
         firstBuyButton.click();
 
         WebElement basketIconBadge = webDriverWait.until(ExpectedConditions.elementToBeClickable(By.xpath(
