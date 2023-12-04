@@ -11,7 +11,7 @@ public class TestRozetkaFilters extends WebDriverInit {
     @Test
     public void testRozetkaFilters() {
         driver.get("https://rozetka.com.ua/");
-        changeCFCookie("THb.hORIB2vuc0cWuMO0jJX8o4odbeFBnLRRDwi6wR8-1701120120-0-1-b8a9ede5.92fab93a.efa8b205-0.2.1701120120");
+        changeCFCookie();
 
         laptopAndCompCategory();
         laptopsSubCategory();

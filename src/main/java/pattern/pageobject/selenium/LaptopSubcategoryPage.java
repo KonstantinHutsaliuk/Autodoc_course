@@ -33,7 +33,7 @@ public class LaptopSubcategoryPage extends LaptopSubcategoryPageLocators impleme
 
     public LaptopSubcategoryPage checkProductInCart(int numberOfProductInListing) {
         String titleInListing = getNameOfItemByIndex(numberOfProductInListing - 1);
-        openCartPopUp(webDriverWait);
+        openCartPopUpI(webDriverWait);
         checkMatchingTitleOfProductI(webDriverWait, titleInListing);
         return this;
     }

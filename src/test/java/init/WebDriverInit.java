@@ -13,6 +13,8 @@ import java.time.Duration;
 public class WebDriverInit {
     public WebDriver driver;
     public WebDriverWait webDriverWait;
+    private final String CF_COOKIE =
+            "3AYWjqJGPistfYHxfF4vTrxAXff7gYcJadDlO2WnkdE-1701617194-0-1-6bc3b921.a76537ff.3cc2e6c1-0.2.1701617194";
 
     @BeforeTest
     public void initDriver() {
@@ -48,8 +50,8 @@ public class WebDriverInit {
         driver.quit();
     }
 
-    public void changeCFCookie(String value){
-        Cookie cookie = new Cookie("cf_clearance", value);
+    public void changeCFCookie(){
+        Cookie cookie = new Cookie("cf_clearance", CF_COOKIE);
         driver.manage().deleteCookieNamed("cf_clearance");
         driver.manage().addCookie(cookie);
         driver.navigate().refresh();

@@ -14,7 +14,7 @@ public interface IHeader {
         Assert.assertEquals(cartCounter, expectedString);
     }
 
-    default void openCartPopUp(WebDriverWait webDriverWait) {
+    default void openCartPopUpI(WebDriverWait webDriverWait) {
         webDriverWait.until(ExpectedConditions.elementToBeClickable(icon)).click();
     }
 }
