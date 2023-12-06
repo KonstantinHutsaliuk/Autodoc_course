@@ -33,6 +33,12 @@
             <version>5.5.3</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide</artifactId>
+            <version>7.0.2</version>
+        </dependency>
+
     </dependencies>
     
 </project>
