@@ -14,7 +14,7 @@ public class WebDriverInit {
     public WebDriver driver;
     public WebDriverWait webDriverWait;
     private final String CF_COOKIE =
-            "3AYWjqJGPistfYHxfF4vTrxAXff7gYcJadDlO2WnkdE-1701617194-0-1-6bc3b921.a76537ff.3cc2e6c1-0.2.1701617194";
+            "fM6mtc0a1esqkzZg6qUY_P0TYcXtSXr63nm7jpLC4a0-1701879992-0-1-b8a9ede5.2e353ff4.efa8b205-0.2.1701879992";
 
     @BeforeTest
     public void initDriver() {
