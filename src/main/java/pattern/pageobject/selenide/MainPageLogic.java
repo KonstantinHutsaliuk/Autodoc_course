@@ -15,7 +15,7 @@ public class MainPageLogic extends MainPageLocators{
     }
 
     public CategoryPageLogic clickOnCategory (int categoryNumber){
-        sideBarCategories.get(categoryNumber).shouldBe(Condition.visible, Duration.ofSeconds(5)).click();
+        sideBarCategories.get(categoryNumber - 1).shouldBe(Condition.visible, Duration.ofSeconds(5)).click();
         return page(CategoryPageLogic.class);
 
     }
